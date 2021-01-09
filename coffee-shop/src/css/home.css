@@ -1,0 +1,390 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: firstFont;
+    src: url("../fonts/W_parvaz/W_parvaz/W_parvaz.TTF");
+}
+
+@font-face {
+    font-family: secoundFont;
+    src: url("../fonts/Far_Diplomat/Far_Diplomat.ttf");
+}
+
+
+body {
+    font-family: secoundFont;
+    overflow-x: hidden;
+    direction: rtl;
+    background-color: #f9f6d7 !important;
+}
+
+/* landing */
+.landing {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../img/wooden-board-empty-table-top-blurred-background_1253-1584.jpg) center no-repeat;
+
+    background-size: cover;
+}
+
+.text h2 {
+    font-family: secoundFont;
+    color: #fbfcfb;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.text h3 {
+    animation: text 3s ease;
+    font-family: secoundFont;
+    color: #fbfcfb;
+    text-align: center;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+}
+
+.text a {
+    margin-bottom: -100px;
+    margin-top: 93px;
+    border-radius: 0;
+    color: #daa758;
+    border-color: #daa758;
+    width: 250px;
+    height: 45px;
+    padding: 10px;
+    font-size: 19px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 2s ease;
+}
+
+.text a:hover {
+    color: #FBFCFC;
+    background-color: #daa758;
+}
+
+@keyframes text {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* ------------------------------------------------------------------------------- */
+/* types of product */
+.products {
+    height: 70vh;
+    width: 100%;
+    position: relative;
+
+    z-index: 10;
+}
+
+.products h3 {
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.coffee {
+    width: 200px;
+    height: 300px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(../img/high-angle-coffee-cup-with-decoration-top_23-2148522973.jpg) center no-repeat;
+    background-size: cover;
+    z-index: 10;
+    overflow: hidden;
+    padding: 0;
+}
+
+.coffee:hover .overlay {
+    left: 0;
+
+}
+
+.tea {
+    width: 200px;
+    height: 300px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(../img/pexels-olenka-sergienko-3604314.jpg) center no-repeat;
+    background-size: cover;
+    z-index: 10;
+    overflow: hidden;
+    padding: 0;
+}
+
+.tea:hover .overlay {
+    left: 0;
+}
+
+.cake {
+    width: 200px;
+    height: 300px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(../img/pexels-elli-1854652.jpg) center no-repeat;
+    background-size: cover;
+    z-index: 10;
+    overflow: hidden;
+    padding: 0;
+}
+
+.cake:hover .overlay {
+    left: 0;
+
+}
+
+.overlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    left: -100%;
+    color: #fff;
+    background-color: rgba(211, 171, 85, 0.6);
+    z-index: 5;
+    transition: left 0.5s;
+
+}
+
+.overlay a {
+    width: 200px;
+    font-size: 40px;
+    height: 50px;
+    text-align: center;
+    color: #FBFCFC;
+}
+
+/* ---------------------------------------------------------------- */
+/* location */
+.location {
+
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(../img/pexels-life-of-pix-8892.jpg) center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.locations {
+    position: relative;
+    width: 900px;
+    height: 550px;
+    background: #fbfcfb;
+}
+
+.location-1 {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background: url("../img/pexels-afta-putta-gunawan-683039.jpg") center no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+}
+
+.location-1-text {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaefef;
+    font-family: secoundFont;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: right;
+}
+
+.location-1-text h3 {
+    color: black;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.location-2-text {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaefef;
+    font-family: secoundFont;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: right;
+}
+
+.location-2-text h3 {
+    color: black;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.location-2 {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background: url(../img/pexels-mihai-vlasceanu-1438445.jpg) center no-repeat;
+    background-size: cover;
+    bottom: 0;
+    right: 0;
+}
+
+/* ---------------------------------------------------------------- */
+/* blog */
+.blog {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+
+}
+
+
+.blog h3 {
+    padding: 20px;
+    text-align: right;
+    position: absolute;
+    top: 0;
+}
+
+.squere {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+}
+
+.squere span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #daa758;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+
+    /* animation: animate 6s linear infinite; */
+}
+
+
+.squere span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #daa758;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transform: rotate(45deg);
+    /* animation: animate 4s linear infinite; */
+}
+
+
+
+.squere span:nth-child(3) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #daa758;
+    border-radius: 62% 38% 37% 63% / 41% 44% 56% 59%;
+
+    /* animation: animate2 10s linear infinite; */
+}
+
+
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.content {
+    position: relative;
+    padding: 40px 60px;
+    color: #000;
+    text-align: center;
+    transition: 0.5s;
+    z-index: 100;
+}
+
+.content a {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    border: 2px solid #daa758;
+    padding: 6px 18px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 800;
+    border-radius: 73% 27% 44% 56% / 49% 44% 56% 51%;
+    transition: 0.5s;
+}
+
+.content a:hover {
+    background: #daa758;
+    color: #fff;
+}

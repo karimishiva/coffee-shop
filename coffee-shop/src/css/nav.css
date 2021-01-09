@@ -1,0 +1,125 @@
+@font-face {
+    font-family: navFont;
+    src: url("../fonts/persian-badkhat1/persian-badkhat1/persian-badkh@t1.ttf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+.links1 ul {
+    animation: navBar1 3s linear;
+    font-family: navFont;
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    list-style: none;
+    position: absolute;
+    right: 100px;
+
+    direction: rtl;
+    z-index: 10;
+
+}
+
+.links2 ul {
+    animation: navBar2 2s linear;
+    font-family: navFont;
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    list-style: none;
+    position: absolute;
+    left: 100px;
+    color: #FBFCFC;
+    direction: rtl;
+    z-index: 10;
+
+}
+
+li {
+    margin: 25px;
+
+}
+
+li a {
+    color: #FBFCFC;
+    text-decoration: none !important;
+    transition: all 1s ease;
+
+}
+
+
+li a:hover {
+
+    color: #daa758;
+    text-decoration: none;
+}
+
+.active {
+    color: #daa758;
+
+}
+
+.logo {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: 'Dancing Script', cursive;
+}
+
+
+.logo h4 {
+    text-align: center;
+    font-size: 30px;
+    color: #FBFCFC;
+    display: inline-block;
+    margin-top: 20px;
+
+}
+
+.logo h4::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #daa758;
+    margin-left: 5px;
+}
+
+.logo h4::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #daa758;
+    margin-right: 5px;
+}
+
+@keyframes navBar1 {
+    from {
+        transform: translateX(200px);
+    }
+
+    to {
+
+        transform: translateX(0);
+    }
+}
+
+@keyframes navBar2 {
+    from {
+        transform: translateX(-200px);
+    }
+
+    to {
+
+        transform: translateX(0);
+    }
+}
