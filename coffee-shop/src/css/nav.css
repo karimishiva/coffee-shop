@@ -70,6 +70,7 @@ li a:hover {
     left: 50%;
     transform: translate(-50%);
     font-family: 'Dancing Script', cursive;
+    z-index: 10;
 }
 
 

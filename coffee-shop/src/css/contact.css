@@ -1,0 +1,240 @@
+.contact-us {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../img/pexels-adrianna-calvo-597929.jpg) center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* .contact-us::before {
+    content: '';
+    width: 50%;
+    height: 50px;
+    background-color: #272727;
+    transform: skew(40deg);
+} */
+
+.contact-text {
+    width: 200px;
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 2px solid white;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    justify-content: center;
+    padding: 10px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.contact-wayes {
+    width: 100%;
+    height: 200vh;
+    position: relative;
+    background-color: #272727;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact-wayes h3 {
+    color: #AE844B;
+    text-align: center;
+    padding: 20px;
+    padding-top: 40px;
+}
+
+.contact-wayes h4 {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    padding-top: 40px;
+}
+
+.contact-wayes>.container {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.phones {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.phones::before {
+    content: '';
+    border-left: 2px solid #AE844B;
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    left: -100px;
+}
+
+.phones h3 {
+    font-size: 20px;
+}
+
+.phones p {
+    color: white;
+    font-size: 12px;
+}
+
+.addresses {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.addresses::before {
+    content: '';
+    border-left: 2px solid #AE844B;
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    left: -100px;
+}
+
+.addresses h3 {
+    font-size: 20px;
+}
+
+.addresses p {
+    color: white;
+    font-size: 10px;
+}
+
+.our-email {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-icon {
+    color: #AE844B;
+    font-size: 30px !important;
+}
+
+.our-email h3 {
+    font-size: 20px;
+}
+
+.our-email p {
+    color: white;
+    font-size: 12px;
+}
+
+
+
+
+.contact-form {
+    display: flex;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.inputBox {
+    position: relative;
+    width: 100%;
+    margin: 0 0 35px 0;
+
+}
+
+.user {
+    width: 100%;
+
+}
+
+.message {
+    width: 100%;
+    min-height: 150px;
+}
+
+textarea {
+    height: 100px !important;
+
+}
+
+.inputBox input,
+.inputBox textarea {
+    resize: none;
+    width: 100%;
+    background-color: #272727;
+    padding: 5px 0;
+    border: none;
+    border-bottom: 1px solid #777;
+    outline: none;
+}
+
+.inputBox span {
+    position: absolute;
+    right: 0;
+    transition: 0.5s;
+    pointer-events: none;
+    font-size: 16px;
+    color: #fff;
+}
+
+.inputBox input:focus~span,
+.inputBox textarea:focus~span,
+.inputBox input:valid~span,
+.inputBox textarea:valid~span {
+    transform: translateY(-20px);
+    font-size: 12px;
+}
+
+.submit-btn {
+    position: relative;
+    cursor: pointer;
+    background-color: #AE844B !important;
+    color: #FFF;
+    border: nont;
+    max-width: 150px;
+    padding: 12px;
+}
+
+.submit-btn:hover {
+    background-color: #8c5c1b !important;
+}
+
+.submitted {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
